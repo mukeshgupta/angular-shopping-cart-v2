@@ -1,0 +1,18 @@
+<div class="card col-md-12">
+    <img src="{{product.thumbnail}}" alt="{{product.title}}">
+    <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.title}}</h5>
+    <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.description}}</p>
+    <p class="price">
+        <span *ngIf="!hasDiscount">₹{{ product.price }}</span>
+        <span *ngIf="hasDiscount">
+            <del>₹{{ product.price }}</del>
+            <span class="discounted-price">₹{{ discountedPrice }}</span>
+        </span>
+        <span class="badge badge-discount" *ngIf="hasDiscount">-{{ product.discountPercentage }}%</span>
+    </p>
+    <div class="rating">
+        <i class="fas fa-star" *ngFor="let star of fullStars"></i>
+        <i class="far fa-star" *ngFor="let star of emptyStars"></i>
+      </div>
+    <button class="btn btn-primary" (click)=addtocart(product)>Add to cart</button>
+</div>

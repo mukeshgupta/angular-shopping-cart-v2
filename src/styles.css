@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.badge {
+    background-color: #ff0000; /* Badge background color */
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  
+  .badge-discount {
+    background-color: green; /* Discount badge color */
+  }

@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container-fluid">
+    <a [routerLink]="'/shop'" class="navbar-brand">Shop</a>  <button class="navbar-toggler"  
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': isActive }" id="navbarSupportedContent">
+      <a [routerLink]="'/cart'" class="navbar-brand ms-auto">  <i class="fas fa-shopping-cart"></i> 
+        Cart (<div style="font-size: 20px;" class="badge bg-danger">{{totalItem}}</div>)
+      </a>
+    </div>
+  </div>
+</nav>

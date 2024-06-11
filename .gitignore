@@ -1,0 +1,52 @@
+package-lock.json
+# Dependencies
+/node_modules/
+
+# Compiled output
+/dist/
+
+# Tests
+/test.ts
+/karma.conf.js
+/coverage/
+
+# IDE Specific files
+/*.idea/
+/.vscode/
+
+# Temporary npm cache directories
+.npm
+
+# Babel configuration
+.babelrc
+
+# Angular environment files
+.angular/env.local
+.angular/env.prod
+
+# Various log files
+npm-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Angular build artifacts (production & development)
+*.log
+ngsw.json
+*.manifest.json
+*.gz
+
+# Optional: Source maps for production builds
+!*.prod.js.map
+!*.prod.css.map
+
+# dotenv files (contains sensitive environment variables)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# history directory (for tools like Nx)
+.history/
+
+.DS_Store
